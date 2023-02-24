@@ -1,5 +1,6 @@
 [package]
 name = "permutations_iter"
+description = "Generate permutations iteratively without recursion in O(n) time."
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
