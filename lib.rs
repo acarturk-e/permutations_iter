@@ -1,3 +1,12 @@
+//! Generate permutations iteratively without recursion.
+//!
+//! ``Permutations.of(n)`` function generates an iterator instance for permutations of `0..n`.
+//!
+//! ``Permutations.next()`` uses Steinhaus-Johnson-Trotter algorithm with Even's modification to generate the next permutation
+//! in $O(n)$ time.
+//!
+//! Each iterator is one-way. You need to construct a new one for iterating again.
+
 /// Generates the inverse permutation. Has $O(n)$ time complexity.
 pub fn inverse_perm(perm: &Vec<usize>) -> Vec<usize> {
     let mut rev_perm = perm.clone();
@@ -7,8 +16,7 @@ pub fn inverse_perm(perm: &Vec<usize>) -> Vec<usize> {
     rev_perm
 }
 
-/// Iterative permutation generation via Steinhaus-Johnson-Trotter algorithm with Even's modification.
-/// Has $O(n)$ time complexity.
+/// Implements ``Iterator``.
 pub struct Permutations {
     n: usize,
     perm: Vec<usize>,
