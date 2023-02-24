@@ -4,6 +4,10 @@ description = "Generate permutations iteratively without recursion in O(n) time.
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
+repository = "https://github.com/acarturk-e/permutations_iter"
+readme = "README.md"
+category = ["algorithms", "mathematics"]
+keywords = ["permutation", "iterator"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
